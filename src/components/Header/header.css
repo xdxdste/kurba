@@ -1,0 +1,17 @@
+header {
+    display: flex;
+    position: relative;
+    overflow: hidden; /* Скрываем все, что находится за пределами header */
+}
+.navigation {
+    z-index: 2; /* Устанавливаем уровень над фоном */
+    position: relative;
+    color:#000000;
+}
+.site-title {
+    margin-left: 20px; /* Отступ между логотипом и названием */
+}
+.logo img {
+    max-width: 100%; /* Убедитесь, что изображение не выходит за пределы контейнера */
+    height: auto; /* Сохраняем пропорции изображения */
+}
