@@ -1,0 +1,10 @@
+.navigation {
+    display: flex;
+    position: relative;
+    color:#000000;
+}
+.navigation ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
