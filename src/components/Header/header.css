@@ -1,17 +1,30 @@
 header {
     display: flex;
-    position: relative;
-    overflow: hidden; /* Скрываем все, что находится за пределами header */
+    justify-content: space-between;
+    padding: 5px 0;
+    border-bottom: 1px solid #ccc;
+    align-items: center;
+    color: #607CE6;
 }
-.navigation {
-    z-index: 2; /* Устанавливаем уровень над фоном */
-    position: relative;
-    color:#000000;
-}
-.site-title {
-    margin-left: 20px; /* Отступ между логотипом и названием */
+.logo-wrapper{
+    display: flex;
 }
 .logo img {
-    max-width: 100%; /* Убедитесь, что изображение не выходит за пределы контейнера */
-    height: auto; /* Сохраняем пропорции изображения */
+    max-width: 100%;
+    height: auto;
+    width: 64px;
+}
+h1 {
+    margin: 1px;
+    margin-left: 10px ;
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+    font-size: 48px;
+}
+.header-text {
+    padding-top: 1px;
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+p {
+    margin: 10px;
+    font-size: 12px;
 }
