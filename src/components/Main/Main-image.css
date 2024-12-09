@@ -1,0 +1,11 @@
+.Main-image {
+    height: 400px;
+    overflow: hidden;
+    padding: 30px;
+}
+
+.just-image {
+    width: auto;
+    height: auto;
+
+}
