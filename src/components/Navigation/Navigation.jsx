@@ -1,8 +1,8 @@
-import './Navigation.css/';
+import style from './Navigation.module.css/';
 
 const Navigation = () => {
   return (
-    <nav className="navigation">
+    <nav className={style.navigation}>
       <ul>
         <li>
           <a href="#Main">Главная</a>

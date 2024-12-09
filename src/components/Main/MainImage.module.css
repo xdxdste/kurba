@@ -1,10 +1,10 @@
-.Main-image {
+.main_image {
     height: 400px;
     overflow: hidden;
     padding: 30px;
 }
 
-.just-image {
+.just_image {
     width: auto;
     height: auto;
 

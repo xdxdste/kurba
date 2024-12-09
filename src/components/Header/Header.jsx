@@ -4,10 +4,10 @@ const Header = () => {
   return (
     <header>
       <div className={style.logo_wrapper}>
-        <div className="logo">
+        <div className={style.logo}>
           <img src="../../../public/logo.png" alt="Логотип" />
         </div>
-        <div className="site-title">
+        <div>
           <h1>Курба</h1>
         </div>
       </div>

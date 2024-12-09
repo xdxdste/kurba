@@ -3,7 +3,7 @@ import './App.css';
 import Header from './components/Header/Header.jsx';
 import Navigation from './components/Navigation/Navigation.jsx';
 import Main from './components/Main/Main.jsx';
-import MainImage from './components/Main/Main-image.jsx';
+import MainImage from './components/Main/MainImage.jsx';
 import About from './components/About/About.jsx';
 
 function App() {
