@@ -1,18 +1,33 @@
-import style from './About.module.css';
+import style from './About.module.scss';
 
 const About = () => {
   return (
-    <div className={style.about}>
-      <div className="about-name">
-        <h1>О Курбе</h1>
+    <section id="about">
+      <div className={style.about}>
+        <div className={style.about_name}>
+          <h1>О Курбе</h1>
+        </div>
+        <div className={style.about_info}>
+          <div className={style.about_info_left}>
+            <p>
+              Издавна было главным селением удела князей Курбских. Жители села занимались торговлей и промыслами. Здесь
+              сходилось несколько просёлочных торговых дорог. После бегства Андрея Курбского вотчина была отобрана у
+              этого рода и впоследствии не раз меняла хозяев. С 1743 года по середину XIX века селом владели Нарышкины.
+              Как пишет один из краеведов, это было одно из «торговых сёл», где многие крестьяне были фактически
+              купцами, а уровень благоустройства приближался к небольшим городкам.
+            </p>
+          </div>
+          <div className={style.about_info_right}>
+            <p>В 1895 году в Курбе была открыта одна из первых в Ярославской губернии сельских библиотек.</p>
+            <p>В 1944—1957 годах Курба была центром одноимённого района</p>
+          </div>
+        </div>
+        <div className={style.about_images}>
+          <img src="../../../public/about_kurba_left.jpg" alt="Логотип" className={style.about_images_left} />
+          <img src="../../../public/about_images_right.jpg" alt="Логотип" className={style.about_images_right} />
+        </div>
       </div>
-      <div className="about-info-left">
-        <p></p>
-      </div>
-      <div className="about-info-right">
-        <p></p>
-      </div>
-    </div>
+    </section>
   );
 };
 

@@ -1,0 +1,52 @@
+.about {
+  padding-top: 100px;
+
+  h1 {
+    font-size: 60px;
+    color: #333333;
+  }
+}
+
+.about_info {
+  display: flex;
+
+  justify-content: space-between;
+
+  p {
+    font-size: 16px;
+  }
+}
+
+.about_name {
+  text-align: start;
+}
+
+.about_info_left {
+  width: 500px;
+}
+
+.about_info_right {
+  width: 500px;
+}
+
+.about_images {
+  display: flex;
+  justify-content: space-between;
+
+  .about_images_left {
+    overflow: hidden;
+    height: 400px;
+    width: 550px;
+    padding: 30px;
+    border: 2px solid #607CE6;
+  }
+
+  .about_images_right {
+    overflow: hidden;
+    height: 400px;
+    width: 550px;
+    padding: 30px;
+    border: 2px solid #607CE6;
+  }
+}
+

@@ -2,27 +2,30 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
-  margin: 30px;
+
 }
 
 .info {
   display: flex;
   padding-right: 10px;
-  width: 60%;
+  width: 700px;
+
+  h1 {
+    font-size: 60px;
+    text-align: start;
+    color: #333333;
+  }
 }
 
 .main_content {
   padding: 20px;
-  width: 35%;
+  width: 500px;
+
+  h2 {
+    font-size: 20px;
+    width: 100%;
+    color: #333333;
+  }
 }
 
-h1 {
-  font-size: 60px;
-}
-
-h2 {
-  font-size: 20px;
-  width: 100%;
-}
 

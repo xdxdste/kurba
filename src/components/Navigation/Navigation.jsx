@@ -1,4 +1,4 @@
-import style from './Navigation.module.css/';
+import style from './Navigation.module.scss/';
 
 const Navigation = () => {
   return (
@@ -12,6 +12,9 @@ const Navigation = () => {
         </li>
         <li>
           <a href="#contact">Контакты</a>
+        </li>
+        <li>
+          <a href="#gallery">Галлерея</a>
         </li>
       </ul>
     </nav>

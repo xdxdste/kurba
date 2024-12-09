@@ -9,6 +9,12 @@ header {
 
 .logo_wrapper {
   display: flex;
+
+  h1 {
+    margin: 1px;
+    font-size: 48px;
+  }
+
 }
 
 .logo img {
@@ -17,17 +23,12 @@ header {
   width: 64px;
 }
 
-h1 {
-  margin: 1px;
-  margin-left: 10px;
-  font-size: 48px;
-}
-
 .header_text {
   padding-top: 1px;
 }
 
 p {
+  display: flex;
   margin-top: 0px;
   font-size: 16px;
   margin-left: 12px;

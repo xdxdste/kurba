@@ -11,20 +11,18 @@ const Header = () => {
           <h1>Курба</h1>
         </div>
       </div>
-      <div className="header-content">
-        <div className="header-text">
-          <div className="contact-info">
-            <div className="contact-info-number">
-              <li>Телефон:</li>
-              <p>+7 777 777 77 77</p>
-            </div>
-            <div className="contact-info-mail">
-              <li>Email:</li>
-              <p>yasya78yarik@gmail.com</p>
-            </div>
+      <section id="contact">
+        <div className={style.contact_info}>
+          <div className={style.contact_info_number}>
+            <li>Телефон:</li>
+            <p>+7 777 777 77 77</p>
+          </div>
+          <div className={style.contact_info_mail}>
+            <li>Email:</li>
+            <p>yasya78yarik@gmail.com</p>
           </div>
         </div>
-      </div>
+      </section>
     </header>
   );
 };

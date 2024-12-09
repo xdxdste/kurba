@@ -5,6 +5,8 @@ import Navigation from './components/Navigation/Navigation.jsx';
 import Main from './components/Main/Main.jsx';
 import MainImage from './components/Main/MainImage.jsx';
 import About from './components/About/About.jsx';
+import Gallery from './components/Gallery/Gallery.jsx';
+import Footer from './components/Footer/Footer.jsx';
 
 function App() {
   // eslint-disable-next-line no-unused-vars
@@ -17,6 +19,8 @@ function App() {
       <Main />
       <MainImage />
       <About />
+      <Gallery />
+      <Footer />
     </>
   );
 }
