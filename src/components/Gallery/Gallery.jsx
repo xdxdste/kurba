@@ -5,7 +5,7 @@ const Gallery = () => {
     <section id="gallery">
       <div>
         <div className={style.name_gallery}>
-          <h1>Галлерея</h1>
+          <h1>Галерея</h1>
         </div>
         <div className={style.gallery}>
           <div className={style.gallery_image}>

@@ -5,7 +5,7 @@ const Header = () => {
     <header>
       <div className={style.logo_wrapper}>
         <div className={style.logo}>
-          <img src="../../../public/logo.png" alt="Логотип" />
+          <img src="../../../public/logokurba.png" alt="Логотип" />
         </div>
         <div>
           <h1>Курба</h1>

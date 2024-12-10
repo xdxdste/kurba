@@ -14,7 +14,7 @@ const Navigation = () => {
           <a href="#contact">Контакты</a>
         </li>
         <li>
-          <a href="#gallery">Галлерея</a>
+          <a href="#gallery">Галерея</a>
         </li>
       </ul>
     </nav>

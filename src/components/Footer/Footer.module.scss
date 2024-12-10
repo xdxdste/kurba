@@ -3,6 +3,7 @@
 }
 
 .footer_main {
+  display: flex;
   flex: 1;
   padding: 20px;
   color: #cccccc;
@@ -36,12 +37,30 @@
   }
 }
 
-.navigation a {
+.footer_navigation a {
   text-decoration: none;
   color: #cccccc;
   transition: background-color 0.3s, color 0.3s;
 }
 
+.footer_navigation a:hover {
+  background-color: #333333;
+  color: #000;
+  text-decoration: underline;
+}
+
 .footer_name {
   color: #cccccc;
+}
+
+.additional_button a {
+  text-decoration: none;
+  color: #cccccc;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.additional_button a:hover {
+  background-color: #333333;
+  color: #000;
+  text-decoration: underline;
 }
