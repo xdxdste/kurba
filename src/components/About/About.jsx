@@ -1,4 +1,6 @@
 import style from './About.module.scss';
+import kurba_left from '../../assets/about_kurba_left.jpg';
+import kurba_right from '../../assets/about_kurba_right.jpg';
 
 const About = () => {
   return (
@@ -23,8 +25,8 @@ const About = () => {
           </div>
         </div>
         <div className={style.about_images}>
-          <img src="../../../public/about_kurba_left.jpg" alt="Логотип" className={style.about_images_left} />
-          <img src="../../../public/about_kurba_right.jpg" alt="Логотип" className={style.about_images_right} />
+          <img src={kurba_left} alt="Логотип" className={style.about_images_left} />
+          <img src={kurba_right} alt="Логотип" className={style.about_images_right} />
         </div>
       </div>
     </section>

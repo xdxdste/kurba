@@ -1,11 +1,12 @@
 import style from './Footer.module.scss';
+import logo from '../../assets/logokurba.png';
 
 const Footer = () => {
   return (
     <div className={style.footer_main}>
       <div className={style.footer_name_logo}>
         <div className={style.footer_logo}>
-          <img src="../../../public/logokurba.png" alt="Логотип" className={style.footer_logo_image} />
+          <img src={logo} alt="Логотип" className={style.footer_logo_image} />
           <h1>Курба</h1>
         </div>
         <div className={style.footer_name}>

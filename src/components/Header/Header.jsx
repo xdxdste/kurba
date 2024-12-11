@@ -1,11 +1,12 @@
 import style from './header.module.scss';
+import logo from '../../assets/logokurba.png';
 
 const Header = () => {
   return (
     <header>
       <div className={style.logo_wrapper}>
         <div className={style.logo}>
-          <img src="../../../public/logokurba.png" alt="Логотип" />
+          <img src={logo} alt="Логотип" />
         </div>
         <div>
           <h1>Курба</h1>
