@@ -1,10 +1,10 @@
-import React from 'react';
 import style from './MainImage.module.css';
+import MainImage1 from '../../assets/123.jpg';
 
 const MainImage = () => {
   return (
     <div className={style.main_image}>
-      <img src="/src/assets/123.jpg" alt="Курба" className={style.just_image} />
+      <img src={MainImage1} alt="Курба" className={style.just_image} />
     </div>
   );
 };
