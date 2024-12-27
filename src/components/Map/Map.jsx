@@ -1,23 +1,41 @@
-import React from 'react';
+import {useEffect, useRef} from "react";
+import L from 'leaflet';
+import 'leaflet/dist/leaflet.css';
 
-const Map = () => {
-  return (
-    <div>
-      <meta charSet="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Карта Mapbox</title>
-      <link href="https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css" rel="stylesheet" />
-      <div className={style.map}></div>
+// Иконка маркера
+// import 'leaflet/dist/leaflet.css';
 
-      <script src="https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js"></script>
-      <script>
-        mapboxgl.accessToken = 'ВАШ_API_КЛЮЧ'; var map = new mapboxgl.Map(
-        {((container = 'map'), (style = 'mapbox://styles/mapbox/streets-v11'), (center = [37.6173, 55.7558]))}); var
-        marker = new mapboxgl.Marker() .setLngLat([37.6173, 55.7558]) .setPopup(new mapboxgl.Popup().setHTML('
-        <h1>Москва</h1>')) // Добавление всплывающего окна .addTo(map);
-      </script>
-    </div>
-  );
+// const customIcon = new L.Icon({
+//   iconUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-icon.png',
+//   iconRetinaUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-icon-2x.png',
+//   shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-shadow.png',
+//   iconSize: [25, 41],
+//   iconAnchor: [12, 41],
+// });
+
+const MapKurba = () => {
+  const mapContainerRef = useRef(null);
+
+  useEffect(() => {
+    // Инициализация карты
+    const map = L.map(mapContainerRef.current).setView([57.560278, 39.498672], 13); // Москва
+
+    // Добавление базового слоя карты
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+    }).addTo(map);
+
+    // Добавление маркера
+    L.marker([57.560278, 39.498672]).addTo(map);
+
+    // Очистка карты при размонтировании компонента
+    return () => {
+      map.remove();
+    };
+  }, []);
+
+  return <div ref={mapContainerRef} style={{height: '300px', margin: '10px'}}/>;
+
 };
 
-export default Map;
+export default MapKurba;

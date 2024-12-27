@@ -1,3 +1,9 @@
+@import "leaflet/dist/leaflet.css";
+
+.leaflet-control-attribution {
+    display: none !important;
+}
+
 #root {
     max-width: 1280px;
     margin: 0 auto;
