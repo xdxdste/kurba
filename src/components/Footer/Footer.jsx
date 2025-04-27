@@ -32,7 +32,7 @@ const Footer = () => {
       <div className={style.additional_button}>
         <ul>
           <li>
-            <a href="https://www.tbank.ru/cf/5TBzaFqMK0W">Поддержать сайт</a>
+            <a href="https://github.com/xdxdste/kurba">Код сайта</a>
           </li>
           <li>
             <a href="//t.me/xdxdste">Написать Автору</a>
